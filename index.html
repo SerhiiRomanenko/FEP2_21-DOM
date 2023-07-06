@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<main class="main">
+
+    <form id="form" class="registration">
+
+        <div class="registration__field field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" class="required">
+            <small class="name__error error disable">Заповніть ім'я</small>
+        </div>
+
+        <div class="registration__field field">
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" placeholder="Enter your surname" class="required">
+            <small class="surname__error error disable">Заповніть прізвище</small>
+        </div>
+
+        <div>
+            <div class="field">
+                <p>Choose your gender:</p>
+                <input type="radio" id="woman" name="gender" value="woman">
+                <label for="woman">Woman</label>
+                <input type="radio" id="man" name="gender" value="man">
+                <label for="man">Man</label>
+            </div>
+            <div class="field">
+                <select name="city" id="city">
+                    <option class="city__title" value="">Choose your city</option>
+                    <option value="kyiv">Kyiv</option>
+                    <option value="odesa">Odesa</option>
+                    <option value="lviv">Lviv</option>
+                </select>
+                <small class="city__error error disable">Виберіть місто</small>
+            </div>
+            <div class="field">
+                <label for="address">Enter your address:</label>
+                <textarea name="address" id="address" placeholder="Enter your address"></textarea>
+                <small class="address__error error disable">Виберіть адресу</small>
+            </div>
+            <div class="field">
+                <input type="checkbox" id="english" name="languages">
+                <label for="english">English</label>
+                <input type="checkbox" id="ukrainian" name="languages">
+                <label for="ukrainian">Ukrainian</label>
+                <input type="checkbox" id="dutch" name="languages">
+                <label for="dutch">Dutch</label>
+                <small class="lang__error error disable">Виберіть мови</small>
+            </div>
+            <button class="submit">Send</button>
+    </form>
+
+</main>
+<script src="main.js"></script>
+</body>
+</html>

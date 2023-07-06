@@ -1,0 +1,53 @@
+//----------------------------------RESET--------------------------------------//
+p {
+  margin: 0;
+}
+
+button {
+  border: 0;
+}
+
+body {
+  background-color: #214B80;
+  text-align: center;
+}
+
+.registration {
+  margin-top: 150px;
+  background-color: wheat;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 400px;
+}
+
+.field {
+  padding: 10px;
+}
+
+small {
+  color: red;
+}
+
+.submit {
+  background-color: #3187F4;
+  color: wheat;
+  padding: 5px;
+  border-radius: 7px;
+
+  &:hover {
+    background-color: darkolivegreen;
+    cursor: pointer;
+  }
+}
+
+.disable {
+  display: none;
+}
+
+.generalInfo {
+  margin-top: 40px;
+  color: white;
+  font-size: 30px;
+}
